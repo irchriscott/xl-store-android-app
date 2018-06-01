@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_products"
+            android:title="@string/title_products"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            />
+
+        <item
+            android:id="@+id/nav_posts"
+            android:title="@string/title_posts"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            />
+
+        <item
+            android:id="@+id/nav_advertisements"
+            android:title="@string/title_advertisements"
+            android:icon="@drawable/ic_video_library_black_24dp"
+            />
+
+    </group>
+
+
+    <item
+        android:id="@+id/menu_user_data"
+        android:title="MY DATA">
+        <menu>
+            <item
+                android:id="@+id/nav_likes"
+                android:title="@string/title_likes"
+                android:icon="@drawable/ic_thumb_up_black_24dp"
+                app:actionLayout="@layout/menu_text_likes"
+                />
+
+            <item
+                android:id="@+id/nav_dislikes"
+                android:title="@string/title_dislikes"
+                android:icon="@drawable/ic_thumb_down_black_24dp"
+                app:actionLayout="@layout/menu_text_dislikes"
+                />
+
+            <item
+                android:id="@+id/nav_companies"
+                android:title="@string/title_companies"
+                android:icon="@drawable/ic_star_black_24dp"
+                app:actionLayout="@layout/menu_text_companies"
+                />
+
+            <item
+                android:id="@+id/nav_comments"
+                android:title="@string/title_comments"
+                android:icon="@drawable/ic_comment_black_24dp"
+                app:actionLayout="@layout/menu_text_comments"
+                />
+
+            <item
+                android:id="@+id/nav_replies"
+                android:title="@string/title_replies"
+                android:icon="@drawable/ic_replies_black_24dp"
+                app:actionLayout="@layout/menu_text_replies"
+                />
+
+            <item
+                android:id="@+id/nav_categories"
+                android:title="@string/title_categories"
+                android:icon="@drawable/ic_star_black_24dp"
+                app:actionLayout="@layout/menu_text_categories"
+                />
+
+            <item
+                android:id="@+id/nav_trades"
+                android:title="@string/title_trades"
+                android:icon="@drawable/ic_trades_black_24dp"
+                app:actionLayout="@layout/menu_text_trades"
+                />
+
+            <item
+                android:id="@+id/nav_bills_and_carts"
+                android:title="@string/title_bills"
+                android:icon="@drawable/ic_bills_and_carts_24dp"
+                app:actionLayout="@layout/menu_text_bills"
+                />
+        </menu>
+    </item>
+
+    <item android:title="OTHERS">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:title="@string/action_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:title="@string/title_logout"
+                android:icon="@drawable/ic_logout_black_24dp"
+                />
+        </menu>
+    </item>
+
+</menu>

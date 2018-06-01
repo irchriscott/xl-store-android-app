@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="165dp">
+
+    <LinearLayout
+        android:id="@+id/menu_cover"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/colorPrimary">
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/menu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="User Name"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginLeft="70dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:id="@+id/menu_followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkGray"
+                android:text="Followers"
+                android:textSize="14dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/menu_following"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Following"
+                android:textColor="@color/darkGray"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/menu_profile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/drawable_image_background"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/white"/>
+
+    </RelativeLayout>
+</LinearLayout>

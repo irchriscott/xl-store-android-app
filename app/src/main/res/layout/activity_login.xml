@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center_vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:text="@string/app_name"
+        android:textSize="50dp"
+        android:textColor="@color/gray"
+        android:layout_marginTop="0dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:padding="16dp"
+        android:textColor="@color/darkGray"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/user_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="15dp"
+        android:ems="1"
+        android:inputType="textEmailAddress"
+        android:hint="Enter Email"
+        android:drawablePadding="15dp"
+        android:gravity="left"
+        android:textColorHint="@color/darkGray"
+        android:background="@drawable/border_gray"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        />
+
+    <EditText
+        android:id="@+id/user_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="15dp"
+        android:ems="1"
+        android:inputType="textPassword"
+        android:hint="Enter Password"
+        android:textColorHint="@color/darkGray"
+        android:drawablePadding="15dp"
+        android:gravity="left"
+        android:background="@drawable/border_gray"
+        android:drawableLeft="@drawable/ic_lock_white_24dp"
+        />
+
+    <CheckBox
+        android:id="@+id/user_remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Remember me"
+        android:textColor="@color/darkGray"
+        android:checked="true"
+        />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Submit"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:background="@drawable/background_login"
+        android:layout_marginTop="16dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginTop="20dp"
+        android:text="- OR -"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/darkGray"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <Button
+        android:id="@+id/go_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Sign Up"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+        android:background="@drawable/blue_border"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

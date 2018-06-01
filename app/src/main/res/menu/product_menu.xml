@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/product_interest"
+        android:title="@string/product_interest"
+        android:icon="@drawable/ic_shopping_cart_black_24dp" />
+
+    <item
+        android:id="@+id/product_like"
+        android:title="@string/product_like"
+        android:icon="@drawable/ic_thumb_up_black_24dp" />
+
+    <item
+        android:id="@+id/product_dislike"
+        android:title="@string/title_dislikes"
+        android:icon="@drawable/ic_thumb_down_black_24dp"/>
+
+    <item
+        android:id="@+id/product_trade"
+        android:title="@string/product_trade"
+        android:icon="@drawable/ic_trades_black_24dp" />
+    <item
+        android:id="@+id/cancel_action"
+        android:title="@string/cancel"
+        android:icon="@drawable/ic_close_black_24dp" />
+</menu>
